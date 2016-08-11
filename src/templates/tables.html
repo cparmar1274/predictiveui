@@ -1,8 +1,9 @@
+<div data-ng-controller="TableCtrl">
 <div class="row">
   <div class="col-lg-6">
     <rd-widget>
-      <rd-widget-header icon="fa-tasks" title="Servers">
-        <a href="#">Manage</a>
+      <rd-widget-header icon="fa-tasks" title="{{serversTitle}}">
+        <a href="#">{{manageTitle}}</a>
       </rd-widget-header>
       <rd-widget-body classes="medium no-padding">
         <div class="table-responsive">
@@ -39,8 +40,8 @@
   </div>
   <div class="col-lg-6">
     <rd-widget>
-      <rd-widget-header icon="fa-tasks" title="Striped Servers">
-        <a href="#">Manage</a>
+      <rd-widget-header icon="fa-tasks" title="{{stripedServers}}">
+        <a href="#">{{manageTitle}}</a>
       </rd-widget-header>
       <rd-widget-body classes="medium no-padding">
         <div class="table-responsive">
@@ -73,4 +74,5 @@
       </rd-widget-footer>
     </rd-widget>
   </div>
+</div>
 </div>
