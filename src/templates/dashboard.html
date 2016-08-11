@@ -1,4 +1,5 @@
-<div class="row alerts-container" data-ng-controller="AlertsCtrl" data-ng-show="alerts.length">
+<div data-ng-controller="AlertsCtrl">
+<div class="row alerts-container" data-ng-show="alerts.length">
   <div class="col-xs-12">
     <uib-alert data-ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</uib-alert>
   </div>
@@ -11,7 +12,7 @@
 				<div class="widget-icon green pull-left">
 					<i class="fa fa-users"></i>
 				</div>
-				<div class="title">80</div>
+				<div class="title"> {{stats.totalUsers}}</div>
 				<div class="comment">Users</div>
 			</rd-widget-body>
 		</rd-widget>
@@ -22,7 +23,7 @@
 				<div class="widget-icon red pull-left">
 					<i class="fa fa-tasks"></i>
 				</div>
-				<div class="title">16</div>
+				<div class="title">{{stats.totalServers}}</div>
 				<div class="comment">Servers</div>
 			</rd-widget-body>
 		</rd-widget>
@@ -33,7 +34,7 @@
 				<div class="widget-icon orange pull-left">
 					<i class="fa fa-sitemap"></i>
 				</div>
-				<div class="title">225</div>
+				<div class="title">{{stats.totalDocs}}</div>
 				<div class="comment">Documents</div>
 			</rd-widget-body>
 		</rd-widget>
@@ -44,7 +45,7 @@
 				<div class="widget-icon blue pull-left">
 					<i class="fa fa-support"></i>
 				</div>
-				<div class="title">62</div>
+				<div class="title">{{stats.totalTickets}}</div>
 				<div class="comment">Tickets</div>
 			</rd-widget-body>
 		</rd-widget>
@@ -128,4 +129,5 @@
 			</rd-widget-body>
 		</rd-widget>
 	</div>
+</div>
 </div>
