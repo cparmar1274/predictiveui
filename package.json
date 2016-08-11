@@ -3,8 +3,6 @@
   "version": "0.0.3",
   "author": "Chirag Parmar",
   "contributors": [
-    "Leonel Samayoa <leonel.e.samayoa@gmail.com> (http://gobliip.com)",
-    "Ricardo Pascua <rdpascua@outlook.com>",
     "Chirag Parmar <chirag-parmar@live.com>"
   ],
   "devDependencies": {
